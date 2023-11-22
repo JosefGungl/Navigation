@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigation.Pages.BMICalc"
+             Title="BMICalc">
+
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+        <Entry x:Name="Weight" Placeholder="Please Enter Your weight in lbs." Text="" HorizontalTextAlignment="Center" FontSize="Large"/>
+        <Entry x:Name="Height" Placeholder="Please Enter Your height in inches" Text="" HorizontalTextAlignment="Center" FontSize="Large"/>
+        <Button Text="Calculate" Clicked="Calc"/>
+        <Label x:Name="BMItext" Text="" HorizontalTextAlignment="Center" FontSize="Large"/>
+
+    </VerticalStackLayout>
+
+
+</ContentPage>

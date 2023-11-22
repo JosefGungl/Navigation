@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Navigation.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Navigation.Pages"
+    >
+
+
+    <FlyoutItem Title="BMICalc">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:BMICalc}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="MorseCode">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MorseCode}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="WhenCanIDrive">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:WhenCanIDrink}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="CatFact">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:CatFact}" />
+        </Tab>
+    </FlyoutItem>
+
+
+
+</Shell>
