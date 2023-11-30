@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:strings="clr-namespace:Navigation.Resources.Strings"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Navigation.Pages.MorseCode"
              Title="MorseCode">
@@ -13,10 +14,10 @@
 
             <Label x:Name="YourText" Text="" HorizontalTextAlignment="Center" Padding="36" FontSize="Large"></Label>
 
-            <Button Text="-" Clicked="DashClicked"/>
-            <Button Text="." Clicked="DotClicked"/>
-            <Button Text="space" Clicked="SpaceClicked"/>
-            <Button Text="clear" Clicked="ClearClicked"/>
+            <Button Text="-" Clicked="DashClicked" SemanticProperties.Description="{x:Static strings:AppResources.dash}"/>
+            <Button Text="." Clicked="DotClicked" SemanticProperties.Description="{x:Static strings:AppResources.dot}"/>
+            <Button Text="{x:Static strings:AppResources.SpaceBtn}" Clicked="SpaceClicked" SemanticProperties.Description="{x:Static strings:AppResources.SpaceBtn}"/>
+            <Button Text="{x:Static strings:AppResources.ClearBtn}" Clicked="ClearClicked" SemanticProperties.Description="{x:Static strings:AppResources.ClearBtn}"/>
 
 
         </VerticalStackLayout>
